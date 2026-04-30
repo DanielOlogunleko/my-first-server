@@ -1,18 +1,98 @@
+<body>
+
+    <h1>🌈 Mood Generator</h1>
+    <p id="mood">Click below to get your vibe</p>
+
+    <button onclick="generateMood()">Generate Mood</button>
+
+    <script>
+        function generateMood() {
+            const moods = [
+                "Focus Mode 🔥",
+                "Relax Mode 🌊",
+                "Creative Mode 🎨",
+                "Energy Boost ⚡",
+                "Chill & Reflect 🌙"
+            ];
+
+            const colors = [
+                "#ffadad",
+                "#a0c4ff",
+                "#caffbf",
+                "#ffd6a5",
+                "#bdb2ff"
+            ];
+
+            const randomIndex = Math.floor(Math.random() * moods.length);
+
+            document.getElementById("mood").innerText = moods[randomIndex];
+            document.body.style.background = colors[randomIndex];
+        }
+    </script>
+
+</body>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Server</title>
+    <title>Daily Decision Maker</title>
+
     <style>
-        /* Your CSS goes here */
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 100px;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+            transition: background 0.5s ease;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+
+        button {
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
     </style>
 </head>
+
 <body>
-    <!-- Your HTML goes here -->
-    
+
+    <h1>🤔 Daily Decision Maker</h1>
+    <p id="decision">Can't decide? Let me choose for you.</p>
+
+    <button onclick="makeDecision()">Decide For Me</button>
+
     <script>
-        // Your javascript code (optional)
+        function makeDecision() {
+            const decisions = [
+                "Go to the gym 💪",
+                "Work on your coding skills 💻",
+                "Watch a movie 🍿",
+                "Go outside for a walk 🌿",
+                "Start that project you've been delaying 🚀",
+                "Call a friend 📞",
+                "Take a break and relax 😌"
+            ];
+
+            const colors = ["#667eea", "#ff7eb3", "#43cea2", "#f7971e"];
+
+            const randomIndex = Math.floor(Math.random() * decisions.length);
+
+            document.getElementById("decision").innerText = decisions[randomIndex];
+            document.body.style.background = colors[randomIndex % colors.length];
+        }
     </script>
+
 </body>
 </html>
