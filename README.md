@@ -8,7 +8,8 @@ Create and host a simple Node.js server that returns a basic HTML page.
 - Update your `package.json` to include a `start` script, and install dependencies `http` and `fs`
 - Update the `server.js` file and write javascript to create a new server hosted on `localhost:3000`
 - Create a basic webpage in `index.html` page (can be spring themed!). Note: Your page can just include HTML+CSS. Optionally, you can make it interactive with Javascript. Place all your CSS in a `<style>` tag and javascript in a `<script>` tag in your `index.html`.
-- Host your project as a Web Service on Render
+- Host your project as a Web Service on Render.  
+- live server: https://my-first-server-02qn.onrender.com 
 
 **Submission**
 
